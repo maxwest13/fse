@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="Forward Systems embeds inside organizations to find friction and build bespoke technology, tools, and workflows that transform business.">
+  <title>Forward Systems | Engineering + Ideas</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/heatmap-hero.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="hero-fluid.js" defer></script>
+</head>
+<body>
+  <div class="page-wrap" id="top">
+    <header class="masthead" aria-label="Main navigation">
+      <a class="site-signature" href="#top" aria-label="Forward Systems, home"><span class="micro-chevron" aria-hidden="true">&gt;</span><span class="signature-name">FORWARD<br>SYSTEMS</span></a>
+      <nav class="site-links" id="site-links" aria-label="Sections">
+        <a href="#approach">APPROACH</a>
+        <a href="#toolkit">TOOLKIT</a>
+        <a href="#applications">APPLICATIONS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-links" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="splash" aria-labelledby="splash-heading">
+        <div class="hero-heading-row">
+          <h1 id="splash-heading">FORWARD<br>SYSTEMS</h1>
+          <div class="hero-glyph" aria-hidden="true"><svg viewBox="0 0 190 190"><path d="M25 25 L156 95 L25 165" stroke="currentColor" stroke-width="23" stroke-linecap="square" stroke-linejoin="miter" fill="none"/></svg></div>
+        </div>
+        <div class="intro-matrix">
+          <div class="intro-main">ENGINEERING<br><span>+ IDEAS</span></div>
+          <div class="intro-steps"><span><b>01</b> EMBED</span><span><b>02</b> DIAGNOSE</span><span><b>03</b> BUILD</span><span><b>04</b> DEPLOY</span></div>
+          <div class="intro-belief">A CUSTOM<br>TOOLKIT FOR<br>REAL IMPACT.</div>
+        </div>
+        <div class="ticker">
+          <span class="ticker-list">INTELLIGENCE <i>•</i> AUTOMATION <i>•</i> CUSTOM TOOLS <i>•</i> INTEGRATION</span>
+          <a href="#contact" class="ticker-link"><span aria-hidden="true">→</span> GET IN TOUCH</a>
+          <span class="globe" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="17"/><path d="M3 20h34M20 3c-13 13-13 21 0 34M20 3c13 13 13 21 0 34M7 11h26M7 29h26"/></svg></span>
+        </div>
+        <div class="heatmap-stage" id="heatmap-stage" aria-label="Abstract illuminated heatmap moving across a technical grid">
+          <img class="heatmap-fallback" src="assets/heatmap-hero.webp" alt="An infrared-inspired ribbon of electric blue, orange, and magenta light flowing through a dark geometric grid" fetchpriority="high">
+          <canvas class="heatmap-fluid" id="heatmap-fluid" aria-hidden="true"></canvas>
+          <span class="heatmap-corner top-left" aria-hidden="true"></span><span class="heatmap-corner top-right" aria-hidden="true"></span><span class="heatmap-corner bottom-left" aria-hidden="true"></span><span class="heatmap-corner bottom-right" aria-hidden="true"></span>
+          <div class="heatmap-meta"><span id="heatmap-instruction">FS_001 // MOVE TO DISTORT</span><span>SCROLL TO EXPLORE ↓</span></div>
+        </div>
+      </section>
+
+      <section class="content-section approach-section" id="approach" aria-labelledby="approach-heading">
+        <div class="section-heading-row">
+          <h2 id="approach-heading">THE<br>APPROACH</h2>
+          <p>AN ENGINEERING-LED PROCESS.<br>BUILT AROUND YOUR BUSINESS, NOT A PLAYBOOK.</p>
+        </div>
+        <div class="process-grid">
+          <button type="button" class="process-tile" data-process="0" aria-pressed="false" aria-label="Explore stage one: Embed">
+            <span class="tile-title"><span>01</span> EMBED</span>
+            <span class="process-art"><img src="assets/embed.svg" alt=""></span>
+            <span class="tile-bottom"><span>GET INSIDE THE<br>BUSINESS.</span><span class="tile-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button type="button" class="process-tile" data-process="1" aria-pressed="false" aria-label="Explore stage two: Diagnose">
+            <span class="tile-title"><span>02</span> DIAGNOSE</span>
+            <span class="process-art"><img src="assets/diagnose.svg" alt=""></span>
+            <span class="tile-bottom"><span>FIND THE REAL<br>BOTTLENECKS.</span><span class="tile-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button type="button" class="process-tile" data-process="2" aria-pressed="false" aria-label="Explore stage three: Build">
+            <span class="tile-title"><span>03</span> BUILD</span>
+            <span class="process-art"><img src="assets/build.svg" alt=""></span>
+            <span class="tile-bottom"><span>ENGINEER THE<br>RIGHT SOLUTION.</span><span class="tile-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button type="button" class="process-tile" data-process="3" aria-pressed="false" aria-label="Explore stage four: Deploy">
+            <span class="tile-title"><span>04</span> DEPLOY</span>
+            <span class="process-art"><img src="assets/deploy.svg" alt=""></span>
+            <span class="tile-bottom"><span>PUT IT TO WORK.<br>MAKE IT LAST.</span><span class="tile-arrow" aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+        <div class="process-expanded" id="process-expanded" hidden aria-live="polite">
+          <span id="process-index">01 / EMBED</span>
+          <p id="process-description">We work inside your organization to understand the people, workflows, systems, and constraints before proposing a solution.</p>
+          <button id="close-process" type="button" aria-label="Close process detail">×</button>
+        </div>
+      </section>
+
+      <section class="content-section toolkit-section" id="toolkit" aria-labelledby="toolkit-heading">
+        <div class="section-heading-row">
+          <h2 id="toolkit-heading">THE<br>TOOLKIT</h2>
+          <p>NOT A FIXED PRODUCT. A BESPOKE SET OF CAPABILITIES<br>THAT MAKE YOUR BUSINESS WORK BETTER.</p>
+        </div>
+        <p class="micro-instruction">HOVER TO ILLUMINATE / CLICK TO EXPLORE <span aria-hidden="true">↘</span></p>
+        <div class="toolkit-grid">
+          <button type="button" class="tool-card" data-tool="intelligence" aria-pressed="false" aria-label="Flip Intelligence card to read details">
+            <span class="flip-inner"><span class="flip-front"><strong>INTELLIGENCE</strong><span class="tool-art"><img src="assets/intelligence.svg" alt=""></span><span class="card-foot">TURN COMPLEXITY<br>INTO CLARITY.<b aria-hidden="true">↗</b></span></span><span class="flip-back"><span class="back-overline">01 / TOOLKIT <b aria-hidden="true">×</b></span><strong>INTELLIGENCE</strong><span>Research systems, knowledge infrastructure, data analysis, and decision tools that make information useful.</span><small>TAP TO RETURN ↶</small></span></span>
+          </button>
+          <button type="button" class="tool-card" data-tool="automation" aria-pressed="false" aria-label="Flip Automation card to read details">
+            <span class="flip-inner"><span class="flip-front"><strong>AUTOMATION</strong><span class="tool-art"><img src="assets/automation.svg" alt=""></span><span class="card-foot">REMOVE FRICTION.<br>MAKE TIME.<b aria-hidden="true">↗</b></span></span><span class="flip-back"><span class="back-overline">02 / TOOLKIT <b aria-hidden="true">×</b></span><strong>AUTOMATION</strong><span>Connected workflows that remove repetitive work, reduce errors, and let teams focus on higher-value decisions.</span><small>TAP TO RETURN ↶</small></span></span>
+          </button>
+          <button type="button" class="tool-card" data-tool="tools" aria-pressed="false" aria-label="Flip Custom Tools card to read details">
+            <span class="flip-inner"><span class="flip-front"><strong>CUSTOM TOOLS</strong><span class="tool-art"><img src="assets/tools.svg" alt=""></span><span class="card-foot">SOFTWARE BUILT<br>FOR YOUR REALITY.<b aria-hidden="true">↗</b></span></span><span class="flip-back"><span class="back-overline">03 / TOOLKIT <b aria-hidden="true">×</b></span><strong>CUSTOM TOOLS</strong><span>Purpose-built dashboards, internal apps, interfaces, and products that fit your business instead of forcing a workaround.</span><small>TAP TO RETURN ↶</small></span></span>
+          </button>
+          <button type="button" class="tool-card" data-tool="infrastructure" aria-pressed="false" aria-label="Flip Infrastructure card to read details">
+            <span class="flip-inner"><span class="flip-front"><strong>INFRASTRUCTURE</strong><span class="tool-art"><img src="assets/infrastructure.svg" alt=""></span><span class="card-foot">BUILD WHAT'S<br>UNDERNEATH.<b aria-hidden="true">↗</b></span></span><span class="flip-back"><span class="back-overline">04 / TOOLKIT <b aria-hidden="true">×</b></span><strong>INFRASTRUCTURE</strong><span>Reliable foundations for better operations: data pipelines, system architecture, APIs, and scalable technology.</span><small>TAP TO RETURN ↶</small></span></span>
+          </button>
+          <button type="button" class="tool-card" data-tool="integration" aria-pressed="false" aria-label="Flip Integration card to read details">
+            <span class="flip-inner"><span class="flip-front"><strong>INTEGRATION</strong><span class="tool-art"><img src="assets/integration.svg" alt=""></span><span class="card-foot">MAKE EVERYTHING<br>WORK TOGETHER.<b aria-hidden="true">↗</b></span></span><span class="flip-back"><span class="back-overline">05 / TOOLKIT <b aria-hidden="true">×</b></span><strong>INTEGRATION</strong><span>We connect fragmented platforms, information, and teams into systems that operate as one.</span><small>TAP TO RETURN ↶</small></span></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="content-section applications-section" id="applications" aria-labelledby="applications-heading">
+        <div class="section-heading-row compact-heading">
+          <h2 id="applications-heading">WHERE IT<br>WORKS</h2>
+          <p>FROM THE FIRST QUESTION TO THE FINISHED TOOL.<br>THE APPLICATION IS ALWAYS BESPOKE.</p>
+        </div>
+        <div class="applications-grid">
+          <button type="button" class="application-card" data-application="operations" aria-label="Explore business operations">
+            <span class="application-preview"><img src="assets/work-operations.svg" alt=""></span><span class="application-caption"><span>01 / OPERATIONS</span><span>↗</span></span>
+          </button>
+          <button type="button" class="application-card" data-application="intelligence" aria-label="Explore organizational intelligence">
+            <span class="application-preview"><img src="assets/work-intelligence.svg" alt=""></span><span class="application-caption"><span>02 / INTELLIGENCE</span><span>↗</span></span>
+          </button>
+          <button type="button" class="application-card" data-application="systems" aria-label="Explore custom systems">
+            <span class="application-preview"><img src="assets/work-systems.svg" alt=""></span><span class="application-caption"><span>03 / CUSTOM SYSTEMS</span><span>↗</span></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-label">FORWARD SYSTEMS / 001</div>
+        <div class="contact-content"><h2>LET'S BUILD<br>FORWARD.</h2><button type="button" class="contact-button" id="contact-trigger">START A CONVERSATION <span aria-hidden="true">→</span></button></div>
+      </section>
+    </main>
+    <footer class="page-footer"><span>© <span id="year"></span> FORWARD SYSTEMS</span><a href="#top">BACK TO TOP ↑</a><span>ENGINEERING + IDEAS</span></footer>
+  </div>
+
+  <dialog class="info-dialog" id="application-dialog" aria-labelledby="application-title"><div class="dialog-content"><button type="button" class="dialog-exit" data-close-dialog aria-label="Close">×</button><div class="dialog-kicker" id="application-kicker"></div><h2 id="application-title"></h2><p id="application-text"></p><a class="dialog-link" href="#contact" id="application-cta">DISCUSS A PROJECT →</a></div></dialog>
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title"><div class="dialog-content"><button type="button" class="dialog-exit" data-close-dialog aria-label="Close">×</button><div class="dialog-kicker">FORWARD SYSTEMS / CONTACT</div><h2 id="contact-title">WHAT ISN'T<br>WORKING?</h2><p>Tell us what you're trying to change. We'll start with a conversation.</p><form id="inquiry-form" action="thank-you.html" method="POST" name="forward-inquiries" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="forward-inquiries"><p class="honeypot"><label>Do not fill this field <input name="bot-field"></label></p><div class="contact-fields"><label>NAME<input required name="name" autocomplete="name" placeholder="Your name"></label><label>EMAIL<input required type="email" name="email" autocomplete="email" placeholder="Your email"></label><label class="wide">WHAT ARE YOU WORKING ON?<textarea required rows="4" name="message" placeholder="A few words about your business or challenge"></textarea></label></div><button type="submit" class="submit-btn">SEND INQUIRY →</button><p id="form-note" class="form-note">Form delivery is configured for Netlify hosting.</p></form></div></dialog>
+</body>
+</html>
