@@ -14,26 +14,7 @@
     menuButton.setAttribute('aria-expanded', 'false');
   }));
 
-  // Only one process stage expands at a time.
-  const phases = [
-    ['01 / EMBED', 'We work inside your organization to understand its people, workflows, technologies, and constraints before proposing a solution.'],
-    ['02 / DIAGNOSE', 'We identify bottlenecks, wasted effort, disconnected information, and overlooked opportunities. The right question comes before the right tool.'],
-    ['03 / BUILD', 'We design and engineer the right intervention, from workflow automation and custom software to decision systems and new infrastructure.'],
-    ['04 / DEPLOY', 'We put the work into real environments, test with actual users, measure what changes, and improve what needs improving.']
-  ];
-  const processDetail = $('#process-expanded');
-  function selectProcess(i) {
-    const chosen = $(`[data-process="${i}"]`);
-    const isOpen = chosen?.getAttribute('aria-pressed') === 'true';
-    $$('.process-tile').forEach((btn) => { btn.classList.remove('is-active'); btn.setAttribute('aria-pressed', 'false'); });
-    if (isOpen) { processDetail.hidden = true; return; }
-    chosen.classList.add('is-active'); chosen.setAttribute('aria-pressed', 'true');
-    $('#process-index').textContent = phases[i][0];
-    $('#process-description').textContent = phases[i][1];
-    processDetail.hidden = false;
-  }
-  $$('.process-tile').forEach(el => el.addEventListener('click', () => selectProcess(Number(el.dataset.process))));
-  $('#close-process')?.addEventListener('click', () => { processDetail.hidden = true; $$('.process-tile').forEach(b=>{b.classList.remove('is-active');b.setAttribute('aria-pressed','false')}) });
+  // Every process stage is displayed in full; no accordion needed.
 
   // The visual face is never a static mockup: these tiles are accessible buttons.
   $$('.tool-card').forEach(card => card.addEventListener('click', () => {

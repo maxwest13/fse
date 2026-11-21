@@ -1,15 +1,19 @@
-# Forward Systems / V5 Fluid Field
+# Forward Systems / V6 Industrial Process
 
-A responsive, single-page, static Forward Systems site. The original black-and-cream poster layout, interactive cards, and purple/blue/orange heatmap artwork are preserved.
+This update is built directly from V5, with the existing responsive layout, heatmap WebGL effect, custom toolkit graphics, flip cards, and contact dialog preserved.
+
+## What changed
+
+- Rebuilt the four-step process in a 2x2 industrial editorial grid, with a single column on phones.
+- Replaced the process icons with oversized 01 / 02 / 03 / 04 numerals, bigger condensed headings, and fully visible body copy.
+- Updated the splash index and process titles to Instrument / Diagnose / Engineer / Iterate.
+- Added subtle grid textures and restrained violet highlights on hover.
+- Removed the obsolete process accordion. Copy and layout reflect the approved language exactly.
 
 ## Preview
 
-Unzip and open `index.html` in Chrome or Safari. Or, for a local server, run `python3 -m http.server 8000` in the extracted folder, then visit `http://localhost:8000`.
+Open `index.html` in Chrome or Edge, or use a local server such as `python -m http.server 8000`.
 
-## New in V5
+## GitHub Pages
 
-Move your mouse over the large heatmap image in the splash section. The pixels now visibly warp in a local area around the cursor. Faster movements create a subtle trailing current. Stopping settles the motion, and leaving gradually restores the original image. On touch devices, drag across the hero with a finger to activate the effect. The grid and heatmap distortion are rendered directly in a WebGL shader (`hero-fluid.js`), not approximated by moving the whole image. The rest of the site keeps the monochrome-to-color toolkit animations and working flip cards.
-
-No external libraries, fonts, or CDNs. The effect automatically falls back to the original still image if WebGL is unavailable or the OS requests reduced motion. Rendering pauses when the graphic is offscreen or the browser tab is hidden. CSS and HTML content remain unaffected.
-
-The contact form needs Netlify hosting to accept inquiries. Local preview shows a helpful non-sending notice.
+Push the modified `index.html`, `styles.css`, `script.js`, and `README.md` files to the existing `main` branch. No special dependencies or build steps. The contact form still needs a form service; GitHub Pages serves static files only.
