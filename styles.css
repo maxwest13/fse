@@ -174,3 +174,16 @@ dialog p{font-size:17px;line-height:1.55;color:#c9c6cb;margin:22px 0 30px}
 .approach-section .section-heading-row h2{font-size:clamp(40px,9.2vw,64px);margin:0}
 .approach-section .section-heading-row p{border-left:0;padding:0;margin:0;max-width:50ch;font-size:11px;line-height:1.7;letter-spacing:.12em}
 }
+
+
+/* V7 / COLOR FLOW: stationary grid overlays the dynamically advected color texture. */
+.heatmap-stage .heatmap-grid{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .35s ease;background-image:linear-gradient(to right,rgba(144,139,223,.22) 1px,transparent 1px),linear-gradient(to bottom,rgba(144,139,223,.20) 1px,transparent 1px);background-size:calc(100% / 13) calc(100% / 6);background-position:center center;mix-blend-mode:screen}
+.heatmap-stage.fluid-ready .heatmap-grid{opacity:.54}
+.heatmap-stage .heatmap-cursor{position:absolute;z-index:1;width:10px;height:10px;left:var(--pointer-x,50%);top:var(--pointer-y,50%);transform:translate(-50%,-50%);border:1px solid rgba(220,210,255,.75);border-radius:50%;pointer-events:none;opacity:0;box-shadow:0 0 0 17px rgba(133,88,255,.035),0 0 17px rgba(133,88,255,.22);transition:opacity .3s ease}
+.heatmap-stage.fluid-ready.is-engaged .heatmap-cursor{opacity:.75}
+/* Outline treatment stays monochrome until activation, preserving V6 layout. */
+.process-number{color:transparent!important;-webkit-text-fill-color:transparent;-webkit-text-stroke:1.6px rgba(239,238,233,.86);paint-order:stroke fill;text-shadow:none!important;transition:-webkit-text-stroke-color .42s ease,transform .5s ease}
+.process-tile:hover .process-number{-webkit-text-stroke-color:#bba9f7;transform:translateX(5px)}
+@supports not (-webkit-text-stroke: 1px white){.process-number{color:#e7e5df!important;-webkit-text-fill-color:initial}}
+@media(max-width:700px){.process-number{-webkit-text-stroke-width:1.35px}.heatmap-stage .heatmap-grid{background-size:calc(100% / 8) calc(100% / 8)}}
+@media(prefers-reduced-motion:reduce){.heatmap-stage .heatmap-grid,.heatmap-stage .heatmap-cursor{display:none}}

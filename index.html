@@ -8,9 +8,9 @@
   <title>Forward Systems | Engineering + Ideas</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="assets/heatmap-hero.webp">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=7">
   <script src="script.js" defer></script>
-  <script src="hero-fluid.js" defer></script>
+  <script src="hero-fluid.js?v=7" defer></script>
 </head>
 <body>
   <div class="page-wrap" id="top">
@@ -41,11 +41,13 @@
           <a href="#contact" class="ticker-link"><span aria-hidden="true">→</span> GET IN TOUCH</a>
           <span class="globe" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="17"/><path d="M3 20h34M20 3c-13 13-13 21 0 34M20 3c13 13 13 21 0 34M7 11h26M7 29h26"/></svg></span>
         </div>
-        <div class="heatmap-stage" id="heatmap-stage" aria-label="Abstract illuminated heatmap moving across a technical grid">
+        <div class="heatmap-stage" id="heatmap-stage" aria-label="Live ultraviolet color field flowing through a technical grid">
           <img class="heatmap-fallback" src="assets/heatmap-hero.webp" alt="An infrared-inspired ribbon of electric blue, orange, and magenta light flowing through a dark geometric grid" fetchpriority="high">
           <canvas class="heatmap-fluid" id="heatmap-fluid" aria-hidden="true"></canvas>
+          <div class="heatmap-grid" aria-hidden="true"></div>
+          <div class="heatmap-cursor" aria-hidden="true"></div>
           <span class="heatmap-corner top-left" aria-hidden="true"></span><span class="heatmap-corner top-right" aria-hidden="true"></span><span class="heatmap-corner bottom-left" aria-hidden="true"></span><span class="heatmap-corner bottom-right" aria-hidden="true"></span>
-          <div class="heatmap-meta"><span id="heatmap-instruction">FS_001 // MOVE TO DISTORT</span><span>SCROLL TO EXPLORE ↓</span></div>
+          <div class="heatmap-meta"><span id="heatmap-instruction">FS_001 // MOVE TO ACTIVATE THE FIELD</span><span>SCROLL TO EXPLORE ↓</span></div>
         </div>
       </section>
 
