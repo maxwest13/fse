@@ -182,10 +182,10 @@ dialog p{font-size:17px;line-height:1.55;color:#c9c6cb;margin:22px 0 30px}
 .heatmap-stage .heatmap-cursor{position:absolute;z-index:1;width:10px;height:10px;left:var(--pointer-x,50%);top:var(--pointer-y,50%);transform:translate(-50%,-50%);border:1px solid rgba(220,210,255,.75);border-radius:50%;pointer-events:none;opacity:0;box-shadow:0 0 0 17px rgba(133,88,255,.035),0 0 17px rgba(133,88,255,.22);transition:opacity .3s ease}
 .heatmap-stage.fluid-ready.is-engaged .heatmap-cursor{opacity:.75}
 /* Outline treatment stays monochrome until activation, preserving V6 layout. */
-.process-number{color:transparent!important;-webkit-text-fill-color:transparent;-webkit-text-stroke:1.6px rgba(239,238,233,.86);paint-order:stroke fill;text-shadow:none!important;transition:-webkit-text-stroke-color .42s ease,transform .5s ease}
+.process-number{color:transparent!important;-webkit-text-fill-color:transparent;-webkit-text-stroke:1.15px rgba(239,238,233,.86);paint-order:stroke fill;text-shadow:none!important;transition:-webkit-text-stroke-color .42s ease,transform .5s ease}
 .process-tile:hover .process-number{-webkit-text-stroke-color:#bba9f7;transform:translateX(5px)}
 @supports not (-webkit-text-stroke: 1px white){.process-number{color:#e7e5df!important;-webkit-text-fill-color:initial}}
-@media(max-width:700px){.process-number{-webkit-text-stroke-width:1.35px}.heatmap-stage .heatmap-grid{background-size:calc(100% / 8) calc(100% / 8)}}
+@media(max-width:700px){.process-number{-webkit-text-stroke-width:0.95px}.heatmap-stage .heatmap-grid{background-size:calc(100% / 8) calc(100% / 8)}}
 @media(prefers-reduced-motion:reduce){.heatmap-stage .heatmap-grid,.heatmap-stage .heatmap-cursor{display:none}}
 
 /* V7.1 / positioning line and confidential case-study presentation */
