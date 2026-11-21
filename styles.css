@@ -235,3 +235,49 @@ dialog p{font-size:17px;line-height:1.55;color:#c9c6cb;margin:22px 0 30px}
   .case-status{font-size:10px;letter-spacing:.06em;padding:7px 9px}
   .case-art-mark{font-size:9px}
 }
+
+
+/* V7.2 / Case-study image system: precision wireframes, classified-file feel. */
+.application-preview { aspect-ratio: 2.04/1; background: #06080d; isolation:isolate; }
+.application-preview img {
+  display:block;
+  object-fit:cover;
+  filter:grayscale(1) brightness(.82) contrast(1.1);
+  opacity:.9;
+  transform:scale(1.01);
+  transition: filter .48s ease, opacity .48s ease, transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.application-card:hover .application-preview img,
+.application-card:focus-visible .application-preview img {
+  filter:grayscale(0) brightness(1.02) contrast(1.06);
+  opacity:1;
+  transform:scale(1.055);
+}
+.application-preview:after { z-index:1; mix-blend-mode:screen; }
+.application-card:hover .application-preview,
+.application-card:focus-visible .application-preview { border-color:rgba(184,168,232,.68); }
+.case-client-mark {
+  position:absolute; z-index:3; left:9px; bottom:9px;
+  display:inline-flex; align-items:center; gap:7px;
+  background:rgba(4,5,8,.91);
+  border:1px solid rgba(238,238,236,.45);
+  padding:6px 8px;
+  color:#f5f2ee;
+  font:700 10px/1.15 'Courier New',monospace;
+  letter-spacing:.105em;
+  box-shadow:0 4px 18px rgba(0,0,0,.34);
+}
+.redaction-mini { width:20px; height:6px; background:repeating-linear-gradient(90deg,#e8e7e4 0 3px,#98989b 3px 4px); }
+.application-card:focus-visible .case-client-mark,
+.application-card:hover .case-client-mark { border-color:rgba(180,140,255,.85); }
+@media(max-width:760px){
+  .application-preview { aspect-ratio:1.85/1; }
+  .case-client-mark { font-size:9px; padding:5px 7px; }
+}
+@media(max-width:460px){
+  .application-preview { aspect-ratio:2.15/1; }
+  .case-client-mark { font-size:10px; }
+}
+@media(prefers-reduced-motion:reduce){
+  .application-preview img { transition:none !important; }
+}
