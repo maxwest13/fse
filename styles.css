@@ -187,3 +187,51 @@ dialog p{font-size:17px;line-height:1.55;color:#c9c6cb;margin:22px 0 30px}
 @supports not (-webkit-text-stroke: 1px white){.process-number{color:#e7e5df!important;-webkit-text-fill-color:initial}}
 @media(max-width:700px){.process-number{-webkit-text-stroke-width:1.35px}.heatmap-stage .heatmap-grid{background-size:calc(100% / 8) calc(100% / 8)}}
 @media(prefers-reduced-motion:reduce){.heatmap-stage .heatmap-grid,.heatmap-stage .heatmap-cursor{display:none}}
+
+/* V7.1 / positioning line and confidential case-study presentation */
+.hero-positioning{
+  font:500 clamp(21px,2.3vw,34px)/1.24 Arial,Helvetica,sans-serif;
+  letter-spacing:-.025em;
+  max-width:900px;
+  margin:0;
+  padding:clamp(22px,3vw,38px) 0 clamp(25px,3.5vw,45px);
+  color:var(--chalk);
+  text-wrap:balance;
+}
+.application-card{display:flex;flex-direction:column;align-items:stretch}
+.application-card .application-preview:before{
+  content:"";
+  position:absolute;z-index:1;inset:0;
+  pointer-events:none;
+  background:repeating-linear-gradient(135deg,transparent 0,transparent 12px,rgba(255,255,255,.018) 12px,rgba(255,255,255,.018) 13px);
+}
+.case-art-mark{
+  position:absolute;z-index:2;right:9px;top:9px;
+  font:9px 'Courier New',monospace;letter-spacing:.12em;
+  color:rgba(244,242,234,.55);background:rgba(6,7,10,.83);
+  border:1px solid rgba(244,242,234,.18);padding:5px 7px;
+}
+.case-status{
+  display:inline-flex;align-items:center;align-self:flex-start;
+  margin-top:12px;padding:7px 9px;
+  font:10px/1.35 'Courier New',monospace;letter-spacing:.08em;
+  border:1px solid rgba(238,238,238,.28);
+  color:#b7b8bc;transition:color .3s,border-color .3s,background .3s;
+}
+.application-card:hover .case-status,.application-card:focus-visible .case-status{
+  color:#e8dfff;border-color:rgba(171,126,255,.65);background:rgba(94,61,136,.12)
+}
+.application-card:focus-visible{outline-offset:6px}
+@media(max-width:760px){
+  .hero-positioning{font-size:clamp(20px,4.2vw,28px);max-width:34ch;padding:14px 0 24px}
+  .case-status{font-size:8.5px;letter-spacing:.025em;padding:6px 5px}
+  .case-art-mark{font-size:7px;right:5px;top:5px}
+}
+@media(max-width:460px){
+  .hero-positioning{font-size:21px;line-height:1.3;padding:12px 0 22px}
+  .tool-card{min-height:320px;aspect-ratio:auto;height:320px}
+  .flip-back strong{font-size:17px;margin-top:10px}
+  .flip-back>span:nth-of-type(2){font-size:12px;line-height:1.48;margin-top:11px}
+  .case-status{font-size:10px;letter-spacing:.06em;padding:7px 9px}
+  .case-art-mark{font-size:9px}
+}

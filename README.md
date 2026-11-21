@@ -27,3 +27,18 @@ Hover and move across the hero to generate a curl/wake, then stop to watch the f
 Process numbers 01–04 are now outlined instead of filled, while the 2x2 V6 process copy stays intact.
 
 GitHub Pages works without a build step. Contact form submissions still require a backend.
+
+## V7.1 / Copy and confidential case studies
+
+- Added the approved primary positioning line directly below the splash headline, above the intro matrix.
+- Kept `A CUSTOM TOOLKIT FOR REAL IMPACT.` in the original matrix column.
+- Replaced three application tiles with numbered confidential case-study placeholders, each with an `UNDER NDA · AVAILABLE ON REQUEST` status label. Their original wireframe artwork remains, now marked as private files.
+- Each case-study card opens the existing contact form and pre-fills a request message if the message field is blank.
+- Removed the old application information dialog and its copy.
+- Updated the five toolkit flip-card back descriptions exactly to the approved copy. Fronts are unchanged.
+- Preserved all process copy, headings, outlined numerals, section descriptors, `WHAT ISN'T WORKING?`, and protocol labels.
+- Added mobile-friendly spacing for the expanded toolkit descriptions.
+
+**Before publication:** Confirm the three studies are genuinely covered by confidentiality obligations. Otherwise, change the NDA label to a truthful alternative, such as `PRIVATE WORK · AVAILABLE ON REQUEST`.
+
+**GitHub Pages note:** The case-study links open the form, but GitHub Pages cannot accept submissions without a form service. Test the modal, then connect form delivery before relying on it for inquiries.
